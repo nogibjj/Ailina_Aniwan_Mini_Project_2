@@ -1,30 +1,37 @@
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+# IDS706 - Mini Project 2 - Ailina Aniwan
 
-Things included are:
+## Alcohol Consumption Data Analysis
 
-* `Makefile`
+### Project Overview
 
-* `Pytest`
+This project analyzes global alcohol consumption using the **drinks.csv** dataset from [FiveThirtyEight](https://github.com/fivethirtyeight/data). It uses Python with **Pandas** for statistical analysis and **Matplotlib** for data visualization to explore the consumption of beer, spirits, and wine across different countries.
 
-* `pandas`
+### Data Source
 
-* `Ruff`:  
+The dataset is sourced from [FiveThirtyEight’s alcohol consumption dataset](https://github.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv). It includes the following columns:
+- **country**: The country name.
+- **beer_servings**: Average beer servings per capita.
+- **spirit_servings**: Average spirit servings per capita.
+- **wine_servings**: Average wine servings per capita.
+- **total_litres_of_pure_alcohol**: Total litres of pure alcohol consumed per capita.
 
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
+### Analysis and Calculations
 
-* `Dockerfile`
+#### Descriptive Statistics
+- **Mean**: The average number of servings.
+- **Median**: The middle value in the data.
+- **Standard Deviation**: The variability in servings across countries.
 
-* `GitHub copilot`
+These statistics provide insights into the overall trends and distribution of alcohol consumption.
 
-* `jupyter` and `ipython` 
+#### Data Visualization
 
-* A base set of libraries for devops and web
+**grouped bar chart** was created to compare the mean, median, and standard deviation for beer, spirits, and wine. This visualization helps identify the central tendencies and spread of alcohol consumption across different categories.
 
-* `githubactions`
+![Data Visualiztion](figure.png)
 
-## References
+According to the chart:
 
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
-
-
-
+- **Beer Servings**: Beer has the highest mean and median servings, with relatively low variability (standard deviation).
+- **Spirit Servings**: Spirits show high variability, as the standard deviation is almost equal to the mean, indicating greater inconsistency in consumption across countries.
+- **Wine Servings**: Wine has the lowest mean and median, but a relatively large standard deviation, indicating that while average consumption is low, there are significant outliers.

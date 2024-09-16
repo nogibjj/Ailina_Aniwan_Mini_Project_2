@@ -25,12 +25,9 @@ def plot_summary_statistics(df):
     bar_width = 0.3
     bar_positions = range(len(columns))
 
-    plt.bar(bar_positions, mean_values, width=bar_width, 
-            label='Mean')
-    plt.bar([p + bar_width for p in bar_positions], median_values, width=bar_width, 
-            label='Median')
-    plt.bar([p + 2 * bar_width for p in bar_positions], std_dev_values, width=bar_width, 
-            label='Standard Deviation')
+    plt.bar(bar_positions, mean_values, width=bar_width, label='Mean')
+    plt.bar([p + bar_width for p in bar_positions], median_values, width=bar_width, label='Median')
+    plt.bar([p + 2 * bar_width for p in bar_positions], std_dev_values, width=bar_width, label='Standard Deviation')
     plt.title('Comparison of Alcohol Servings by Type')
     plt.ylabel('Servings')
     plt.xlabel('Alcohol Type')
