@@ -1,3 +1,4 @@
+[![CI](https://github.com/nogibjj/Ailina_Aniwan_Mini_Project_2/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Ailina_Aniwan_Mini_Project_2/actions/workflows/cicd.yml)
 # IDS706 - Mini Project 2 - Ailina Aniwan
 
 ## Alcohol Consumption Data Analysis
@@ -8,7 +9,7 @@ This project analyzes global alcohol consumption using the **drinks.csv** datase
 
 ### Data Source
 
-The dataset is sourced from [FiveThirtyEight’s alcohol consumption dataset](https://github.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv). It includes the following columns:
+The dataset is sourced from [FiveThirtyEight’s alcohol consumption dataset](https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv). It includes the following columns:
 - **country**: The country name.
 - **beer_servings**: Average beer servings per capita.
 - **spirit_servings**: Average spirit servings per capita.
@@ -17,14 +18,14 @@ The dataset is sourced from [FiveThirtyEight’s alcohol consumption dataset](ht
 
 ### Analysis and Calculations
 
-#### Descriptive Statistics
+#### 1. Descriptive Statistics
 - **Mean**: The average number of servings.
 - **Median**: The middle value in the data.
 - **Standard Deviation**: The variability in servings across countries.
 
 These statistics provide insights into the overall trends and distribution of alcohol consumption.
 
-#### Data Visualization
+#### 2. Data Visualization
 
 **grouped bar chart** was created to compare the mean, median, and standard deviation for beer, spirits, and wine. This visualization helps identify the central tendencies and spread of alcohol consumption across different categories.
 
